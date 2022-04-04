@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: fixed;
+    z-index: -9;
+    transition: height 0.5s;
+}
+
+.main,.info_top,.message,.zhgl{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px 3px rgba(106, 106, 106, 0.5);
+    color: #333;
+    transition: height 0.5s;
+    margin-bottom: 5vh;
+    margin: 0px auto;
+    margin-top: 20px;
+    /* 1014 */
+}
+.message{
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c5ed1c5;
+}
+#zhgl{
+    display: none;
+}
+.message>div{
+    width: 80%;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.main{
+    height: 420px;
+    overflow-y: hidden;
+}
+.info_top{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    color: rgb(95, 95, 95);
+}
+.info_top>img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 0px auto;
+    transform: translateY(-50px);
+    border: 5px solid rgb(255, 130, 53);
+    padding: 3px;
+}
+.info_top>div{
+    margin-top: -40px;
+}
+.info_top>div>p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+}
+.info_top p>svg{
+    transform: translateY(10px);
+}
+#zk{
+    display: block;
+}
+.d{
+    padding-bottom: 50px;
+}
+nav{
+    display: flex;
+    padding: 10px 2vw;
+    color: #333;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 5px 3px rgba(255, 255, 255, 0.5);
+}
+nav svg{
+    height: 60px;
+    width: 90px;
+}
+.tool_list{
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    margin: 20px 0px;
+}
+.tool_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: rgb(79, 79, 79);
+    padding: 2px 12px;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    background-color: #ffffff92;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 1px rgba(128, 128, 128, 0.655);
+    transition: all 0.5s;
+    outline: none;
+}
+.tool_ico{
+    width: 50px;
+}
+
+.text{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 1px solid rgb(255, 98, 0);
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    height: 35px;
+}
+.text:focus{
+    border-bottom: 2px solid rgb(255, 98, 0);
+}
+
+.input_hidden>.text{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 1px solid rgb(255, 98, 0);
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: gray;
+    height: 35px;
+}
+.input_hidden{
+    margin: 11px 0px;
+}
+.input{
+    margin: 10px 0px;
+}
+.botton{
+    display: inline-block;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+.botton:hover{
+    background-color: rgb(255, 160, 101);
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.bottom{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.label{
+    color: rgb(255, 98, 0);
+}
+.message p{
+    line-height: 26px;
+}
+.gl_table{
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+.gl_table td{
+    border: 1px solid rgb(255, 98, 0);
+    text-align: center;
+    line-height: 30px;
+}
+.gl_table th{
+    color: #333;
+    background-color: rgb(218, 145, 99);
+    line-height: 50px;
+    border: 1px solid white;
+}
+#hidden{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+}
+@media screen and (max-width:900px){
+    .back{
+        height: 60vh;
+        box-shadow: 0px 2px 18px 10px rgba(186,175,171,0.9);
+    }
+    .main,.info_top,.message,.zhgl{
+        width: 90vw;
+    }
+}
